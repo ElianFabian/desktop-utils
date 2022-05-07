@@ -1,6 +1,11 @@
 import eyed3
 import os
 
+
+# In the case of my Windows at least the change for some reason it's not visible if you check it in the properties' window
+# but, using a program like foobar2000, if you make a little change to all the songs (like changing the one property, e.g. the album name)
+# it will appear on the properties' window).
+
 print("\nThis program allows you to set the title of a song using its filename.")
 print("If the name is in the form: 'myAlbum - myTitle.mp3'.")
 print("You can introduce the 'myAlbum - ' part and the format ('.mp3') to change the title to 'myTitle'.\n\n")
