@@ -2,4 +2,10 @@
 
 # https://stackoverflow.com/questions/3648142/how-can-i-recursively-delete-folder-with-a-specific-name-with-powershell
 
-Get-Childitem -Include "build" -Recurse -force | Remove-Item -Force -Recurse
+echo ''
+
+$foldername = Read-Host 'Introduce the foldername you want to delete recursively: '
+
+Get-Childitem -Include $foldername -Recurse -force | Remove-Item -Force -Recurse
+
+echo ''
