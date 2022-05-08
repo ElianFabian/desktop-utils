@@ -6,6 +6,6 @@ echo ''
 
 $foldername = Read-Host 'Introduce the foldername you want to delete recursively: '
 
-Get-Childitem -Include $foldername -Recurse -force | Remove-Item -Force -Recurse
+Get-ChildItem -Include $foldername -Recurse -force | Remove-Item -Force -Recurse
 
 echo ''
