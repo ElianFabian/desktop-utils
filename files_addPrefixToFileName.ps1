@@ -10,7 +10,7 @@ if ($args)
 }
 else
 {
-	$prefix = Read-Host 'Introduce the prefix you want to add'
+	$prefix = Read-Host 'Introduce the prefix you want to add: '
 }
 
 (Get-ChildItem -File) | Rename-Item -NewName { "$prefix $_" }
